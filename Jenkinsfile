@@ -3,7 +3,7 @@ pipeline {
     dockerimagename = "rupeshsaini09/rupesh-webapp"
     dockerImage = ""
   }
-  agent { node { label 'agent' } } 
+  agent any
   stages {
     stage('Checkout Source') {
       steps {
