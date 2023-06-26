@@ -32,7 +32,7 @@ pipeline {
     stage('Deploying webapp to Kubernetes') {
       steps {
         script {
-          sh "kubectl get all"
+          sh "kubectl apply -f deploy.yml"
           sh "ls"
           sh "pwd"
           sh "ip a"
