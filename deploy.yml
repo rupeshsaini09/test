@@ -4,7 +4,7 @@ metadata:
      name: rupesh-webapp
 spec:
      selector:
-          matchLebels:
+          matchLabels:
                 app: frontend
      template:
           metadata:
