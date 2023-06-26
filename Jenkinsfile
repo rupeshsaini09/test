@@ -3,11 +3,7 @@ pipeline {
     dockerimagename = "rupeshsaini09/rupesh-webapp"
     dockerImage = ""
   }
-  agent {
-    kubernetes {
-        label 'webapp'
-       }
-    }
+  agent any
   stages {
     stage('Checkout Source') {
       steps {
