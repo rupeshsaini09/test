@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Deploying webapp to Kubernetes') {
       steps {
-        sh 'cat deploy.yml | sed "s/{{GIT_COMMIT}}/$GIT_COMMIT/g" | kubectl apply -f -'
+        sh 'cat deploy.yml'
       }
     }
   }
