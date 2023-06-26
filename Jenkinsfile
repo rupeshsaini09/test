@@ -31,7 +31,9 @@ pipeline {
     }
     stage('Deploying webapp to Kubernetes') {
       steps {
-        sh 'kubectl apply -f deploy.yml'
+        script {
+          sh "kubectl apply -f deploy.yml"
+        }
       }
     }
   }
