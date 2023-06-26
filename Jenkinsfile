@@ -32,7 +32,7 @@ pipeline {
     stage('Deploying webapp to Kubernetes') {
       steps {
         script {
-          sh "kubectl apply -f deploy.yml"
+          sh "kubectl apply -f deploy.json"
         }
       }
     }
