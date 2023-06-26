@@ -15,7 +15,7 @@ spec:
                containers:
                    - name: pqr
                      image: rupeshsaini09/rupesh-webapp:latest
-                      ports:
+                     ports:
                           - containerPort: 80
 ---
 apiVersion: v1
