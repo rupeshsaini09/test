@@ -1,13 +1,13 @@
 pipeline {
   environment {
-    dockerimagename = "rupeshsaini09/rupesh-webapp"
+    dockerimagename = "rupeshsaini09/rupesh-newwebapp"
     dockerImage = ""
   }
   agent any
   stages {
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/rupeshsaini09/test.git'
+        git 'https://github.com/rupeshsaini09/rupesh-webapp.git'
       }
     }
     stage('Build image') {
@@ -33,7 +33,7 @@ pipeline {
       steps {
         script {
           sh "ls"
-          sh "cat deploy.yml | kubectl apply -f -"
+          sh "kubectl apply -f app_deploy.json"
           sh "pwd"
           sh "ip a"
         }
