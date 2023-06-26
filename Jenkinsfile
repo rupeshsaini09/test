@@ -32,8 +32,8 @@ pipeline {
     stage('Deploying webapp to Kubernetes') {
       steps {
         script {
-          sh "kubectl apply -f deploy.yml"
           sh "ls"
+          sh "kubectl apply -f app_deploy.json"
           sh "pwd"
           sh "ip a"
         }
