@@ -33,7 +33,7 @@ pipeline {
       steps {
         script {
           sh "ls"
-          sh "kubectl apply -f app_deploy.json"
+          sh "cat deploy.yml | kubectl apply -f -"
           sh "pwd"
           sh "ip a"
         }
