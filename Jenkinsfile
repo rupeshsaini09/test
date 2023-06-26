@@ -33,6 +33,9 @@ pipeline {
       steps {
         script {
           sh "kubectl get all"
+          sh "ls"
+          sh "pwd"
+          sh "ip a"
         }
       }
     }
