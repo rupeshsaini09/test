@@ -9,7 +9,7 @@ spec:
      template:
           metadata:
                name: abc
-               lables:
+               labels:
                    app: frontend
           spec:
                containers:
