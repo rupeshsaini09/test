@@ -1,3 +1,3 @@
 git add .
 git commit -m "$(date +%d-%m-%y-%T)"
-git push -u 
+git push --repo https://github.com/rupeshsaini09/rupesh-webapp.git
