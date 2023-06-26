@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Deploying webapp to Kubernetes') {
       steps {
-        sh 'cat deploy.yml'
+        sh 'kubectl apply -f deploy.yml'
       }
     }
   }
