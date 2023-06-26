@@ -31,8 +31,8 @@ pipeline {
     }
     stage('Deploying webapp to Kubernetes') {
       steps {
-        steps {
-          sh "kubectl apply -f deploy.json"
+        script {
+          sh "kubectl get all"
         }
       }
     }
